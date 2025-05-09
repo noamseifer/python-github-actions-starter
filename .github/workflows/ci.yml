@@ -1,11 +1,10 @@
 # The name of the workflow
-name: "main workflow"
+name: main-workflow
 
 on: [push, pull_request]
 
 jobs:
   workflow_call:
     uses: ./.github/workflows/reusable-workflow.yml
-
 
 
