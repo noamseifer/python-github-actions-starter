@@ -1,0 +1,19 @@
+
+name: Reusable Workflow
+
+on:
+  workflow_call:
+    inputs:
+      py-version:
+        description: The python version to run on
+        required: true
+        type: string # [3.9, 3.10]
+      test-to-run:
+        type: choice
+        options:
+         - lint
+         - test
+      # TODO:
+      # Accept Two inputs: 1) python version 2) Action - lint or test
+      # Run the appropriate, for example:
+
